@@ -4,31 +4,9 @@ import java.util.Arrays;
 public class test {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
-        System.out.println(minDist(arr, arr.length, 8, 5));
+        //System.out.println(minDist(arr, arr.length, 8, 5));
     }
 
-    static int minDist(int a[], int n, int x, int y) {
-        int minDist = 0;
-        int checkDist = 0;
-        int[] xi = new int[n];
-        int[] yj = new int[n];
-        // code here
-        for (int i = 0; i < n; i++) {
+    ArrayList<Integer> max = new ArrayList<>();
 
-            if (x == a[i]) {
-                xi[i] = i;
-                for (int j = 0; j < n; j++) {
-                    if (y == a[j]) {
-                        yj[j] = j;
-
-                        if (minDist == 0) minDist = yj[j] - xi[i];
-                        checkDist = yj[j] - xi[i];
-                        if (checkDist < minDist) return Math.abs(checkDist);
-                        else return minDist;
-                    }
-                }
-            }
-        }
-        return -1;
-    }
 }
