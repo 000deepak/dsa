@@ -1,12 +1,18 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class test {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        //System.out.println(minDist(arr, arr.length, 8, 5));
+        Integer[] arr = {1, 2, 3, 4, 5,4};
+        ArrayList<Integer> max = new ArrayList<>();
+
+        List<Integer> l = Arrays.asList(arr);
+        Integer f = l.stream()
+                .mapToInt(v -> v)
+                .max().orElseThrow(NoSuchElementException::new);
+
+        System.out.println(Collections.max(l));
     }
 
-    ArrayList<Integer> max = new ArrayList<>();
 
 }
