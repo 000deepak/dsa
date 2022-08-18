@@ -1,42 +1,56 @@
 package Sorting;
+
 import java.util.Arrays;
 
 public class MergeSort {
 
-    public static int[] mergeSort(int[] arr) {
-        if (arr.length == 1) return arr;
+    public static int[] mergeSort(int[] a, int n) {
+        if (n < 2) return a;
 
-        int[] x = mergeSort(Arrays.copyOfRange(arr, 0, arr.length / 2));
-        int[] y = mergeSort(Arrays.copyOfRange(arr, arr.length / 2, arr.length));
+        int mid = n / 2;
+        int[] l = new int[mid];
+        int[] r = new int[n - mid];
 
-        return merge(x, y);
+        for (int i = 0; i < mid; i++) {
+            l[i] = a[i];
+        }
+        for (int i = mid; i < n; i++) {
+            r[i - mid] = a[i];
+        }
+        mergeSort(l, mid);
+        mergeSort(r, n - mid);
+
+        return merge(a, l, r, mid, n - mid);
     }
 
-    /**
-     * Merges two sorted arrays {@code a} and {@code b}.
-     *
-     * @param a
-     * @param b
-     * @return
-     */
-    public static int[] merge(int[] a, int[] b) {
-        int lenA = a.length, lenB = b.length, k = 0;
-        int[] sortedArray = new int[lenA + lenB];
+    public static int[] merge(int[] a, int[] l, int[] r, int left, int right) {
 
-        for (int i = 0, j = 0; i < lenA || j < lenB; ) {
-            if (j == lenB || (i < lenA && a[i] < b[j])) {
-                sortedArray[k++] = a[i++];
+        int i = 0, j = 0, k = 0;
+
+        //merging l&r into a
+        while (i < left && j < right) {
+            if (l[i] <= r[j]) {
+                a[k++] = l[i++];
             } else {
-                sortedArray[k++] = b[j++];
+                a[k++] = r[j++];
             }
         }
 
-        return sortedArray;
+        //copy remaining elements of array if they are of unequal length
+        while (i < left) {
+            a[k++] = l[i++];
+        }
+        while (j < right) {
+            a[k++] = r[j++];
+        }
+
+        return a;
     }
 
     public static void main(String[] args) {
-        int[] ar = new int[]{3, 5, 1, 6, 9, 8};
-        System.out.println(Arrays.toString(ar));
-        System.out.println(Arrays.toString(mergeSort(ar)));
+        int[] actual = {5, 1, 6, 2, 3, 4};
+        int[] sorted = MergeSort.mergeSort(actual, actual.length);
+
+        System.out.println(Arrays.toString(sorted));
     }
 }

@@ -1,5 +1,8 @@
 package Searching;
 
+/**
+ * Time Complexity : O(log n)
+ */
 public class BinarySearch {
     public int binarySearch(int[] nums, int key) {
 
