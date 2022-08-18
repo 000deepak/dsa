@@ -25,6 +25,7 @@ public class BinarySearch {
             if (key < nums[mid]) {
                 high = mid - 1;
             }
+
             //go left
             else {
                 low = mid + 1;
