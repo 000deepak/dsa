@@ -1,13 +1,9 @@
-import java.util.*;
-import java.util.stream.Collectors;
+package arrays.Basic;
 
-public class test {
+public class ElementsInRange {
     public static void main(String[] args) {
-        int[] arr = {1, 4, 5, 2, 7, 8, 3};
-        long[] b = {6, 5, 4};
-        check_elements(arr, arr.length, 2, 5);
-    }
 
+    }
     public static boolean check_elements(int arr[], int n, int A, int B) {
         int m = 0;
         int small;
