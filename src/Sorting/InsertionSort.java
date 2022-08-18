@@ -7,7 +7,7 @@ import java.util.Arrays;
  * compare
  * shift
  * insert
- *
+ * <p>
  * In linkedlist we dont have to shift elements
  * Insetion sort is designed for linked list
  */
@@ -15,9 +15,6 @@ import java.util.Arrays;
 //passes = (n-1)
 //comparison = 1+2+3+4+5+n-1 = n(n-2)/2 = O(n2)
 //swaps      = 1+2+3+4+5+n-1 = n(n-2)/2 = O(n2)
-
-//Time complexity of any sortig algo is based on comparison.
-//Time complexity = O(n2)
 
 
 class InsertionSort {

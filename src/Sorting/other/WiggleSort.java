@@ -1,4 +1,6 @@
-package Sorting;
+package Sorting.other;
+
+import Sorting.MergeSort;
 
 import java.util.Arrays;
 

@@ -16,8 +16,7 @@ public class BubbleSort {
     //comparison = 1+2+3+4+5+n-1 = n(n-2)/2 = O(n2)
     //swaps      = 1+2+3+4+5+n-1 = n(n-2)/2 = O(n2)
 
-    //Time complexity of any sortig algo is based on comparison.
-    //Time complexity = O(n2)
+
     private static void bubbleSort(int[] ar) {
         for (int i = 0; i < ar.length - 1; i++) {
             for (int j = 0; j < ar.length - i - 1; j++) {

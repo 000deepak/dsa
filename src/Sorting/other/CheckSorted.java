@@ -1,4 +1,4 @@
-package Sorting;
+package Sorting.other;
 
 public class CheckSorted {
 

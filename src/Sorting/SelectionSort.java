@@ -1,5 +1,11 @@
 package Sorting;
 
+/**
+ * lowest = first element
+ * pass
+ * select lowest element
+ * swap
+ */
 
 public class SelectionSort {
     public void printArray(int[] arr) {

@@ -9,8 +9,6 @@ public class HeapSort {
      * <p/>
      * Time complexity: O(n log n) as maxHeapify has complexity O(log n), buildMaxHeap has complexity O(n) and we 
      * run maxHeapify n-1 times in heapSort function, therefore time complexity of heapSort function is O(n log n).
-     *
-     * @param a
      */
     public static void heapSort(int[] a) {
         buildMaxHeap(a);
@@ -20,19 +18,6 @@ public class HeapSort {
             maxHeapify(a, 0, i);
         }
     }
-
-    /**
-     * Makes the array {@param a} satisfy the max heap property starting from
-     * {@param index} till {@param end} position in array.
-     * <p/>
-     * See this for a basic version of maxHeapify.
-     * <p/>
-     * Time complexity: O(log n).
-     *
-     * @param a
-     * @param index
-     * @param end
-     */
     public static void maxHeapify(int[] a, int index, int end) {
         int largest = index;
         int leftIndex = 2 * index + 1;

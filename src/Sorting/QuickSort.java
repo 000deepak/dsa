@@ -5,22 +5,16 @@ import java.util.Arrays;
 public class QuickSort {
 
     /**
-     * In-place partition method which moves all elements smaller than
-     * the pivot element to its left and all elements larger than the
-     * pivot element to its right and finally places the pivot element
-     * at its correct position.
-     *
-     * @param arr
-     * @param startIndex
-     * @param endIndex
-     * @return position of the pivot element
+     * pivot
+     * compare
+     * swap
      */
+
     public static int partition(int[] arr, int startIndex, int endIndex) {
         int pivot = endIndex, temp;
 
         for (int i = startIndex; i < endIndex; i++) {
-            // if ith element is smaller than pivot element then 
-            // swap it with the last larger element known
+            // if ith element is smaller than pivot element then swap it with the last larger element known
             if (arr[i] < arr[pivot]) {
                 // swap a[startIndex] with a[i]
                 temp = arr[startIndex];
@@ -38,19 +32,6 @@ public class QuickSort {
         return startIndex;
     }
 
-    /**
-     * Recursive Quick sort.
-     * NOTE: This function is tail-recursive (doesn't use extra stack space per recursive call in many
-     * programming languages but not in Java as it doesn't support tail-recursive optimization).
-     * <p/>
-     * Time complexity:
-     * Best Case:   O(nlogn)
-     * Worst Case:  O(n*n)
-     *
-     * @param arr
-     * @param startIndex
-     * @param endIndex
-     */
     public static void quickSort(int[] arr, int startIndex, int endIndex) {
         if (startIndex < endIndex) {
             int partition = partition(arr, startIndex, endIndex);
@@ -59,40 +40,11 @@ public class QuickSort {
         }
     }
 
-    /**
-     * Wrapper method to quick sort the entire array.
-     *
-     * @param arr the input array to sort
-     */
-    public static void quickSort(int[] arr) {
-        quickSort(arr, 0, arr.length - 1);
-    }
 
     public static void main(String[] args) {
         int[] ar = {3, 2, 1, 6, 4, 9, 7, 8};
         System.out.println(Arrays.toString(ar));
-        quickSort(ar);
-        System.out.println(Arrays.toString(ar));
-        
-        System.out.println("------");
-        
-        ar = new int[]{3, 2, 6, 8, 4, 3, 7, 8};
-        System.out.println(Arrays.toString(ar));
-        quickSort(ar);
-        System.out.println(Arrays.toString(ar));
-        
-        System.out.println("------");
-        
-        ar = new int[]{4, 4, 4, 4, 4, 4, 4};
-        System.out.println(Arrays.toString(ar));
-        quickSort(ar);
-        System.out.println(Arrays.toString(ar));
-        
-        System.out.println("------");
-        
-        ar = new int[]{};
-        System.out.println(Arrays.toString(ar));
-        quickSort(ar);
+        quickSort(ar, 0, ar.length - 1);
         System.out.println(Arrays.toString(ar));
     }
 }
