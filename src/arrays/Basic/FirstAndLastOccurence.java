@@ -1,6 +1,8 @@
-package arrays;
+package arrays.Basic;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Given a sorted array arr containing n elements with possibly duplicate elements, the task is to find indexes of first and last occurrences of an element x in the given array.
@@ -17,12 +19,12 @@ import java.util.ArrayList;
 
 public class FirstAndLastOccurence {
     public static void main(String[] args) {
-        int[] arr = {1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 7, 7, 7, 7, 8, 8, 8, 9, 9, 9, 10, 10};
+        Integer[] arr = {1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 7, 7, 7, 7, 8, 8, 8, 9, 9, 9, 10, 10};
         firstAndLastOccurence(arr, 29, 1);
-
+        firstAndLastOccurenceUsingCollection(arr, 29, 1);
     }
 
-    public static ArrayList<Long> firstAndLastOccurence(int arr[], int n, int x) {
+    public static ArrayList<Long> firstAndLastOccurence(Integer arr[], int n, int x) {
         ArrayList<Long> l = new ArrayList<>();
 
         long first = 0;
@@ -47,6 +49,23 @@ public class FirstAndLastOccurence {
         if (first != 0 && last == 0) last = first;
         l.add(first);
         l.add(last);
+
+        System.out.println("normal  " + l);
+
+        return l;
+    }
+
+    public static ArrayList<Long> firstAndLastOccurenceUsingCollection(Integer[] arr, int n, int x) {
+        ArrayList<Long> l = new ArrayList<>();
+        List<Integer> a = Arrays.asList(arr);
+
+        long first = a.indexOf(x);
+        long last = a.lastIndexOf(x);
+
+        l.add(first);
+        l.add(last);
+
+        System.out.println("using collection  " + l);
         return l;
     }
 }
