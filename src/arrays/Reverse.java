@@ -29,7 +29,7 @@ public class Reverse {
     //swap
     public static void reverse2(int a[]) {
         int n = a.length;
-        int i, k, t;
+        int i, t;
         for (i = 0; i < n / 2; i++) {
             //storing 1st element
             t = a[i];
