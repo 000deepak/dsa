@@ -3,37 +3,30 @@ import java.util.stream.Collectors;
 
 public class test {
     public static void main(String[] args) {
-        int[] arr = {1, 4, 5, 2, 7, 8, 3};
-        long[] b = {6, 5, 4};
-        check_elements(arr, arr.length, 2, 5);
+        System.out.println(
+
+                reverse("Geeks")
+
+
+        );
+
+
     }
 
-    public static boolean check_elements(int arr[], int n, int A, int B) {
-        int m = 0;
-        int small;
-        if (A > B) {
-            m = A - B - 1;
-            small = A;
-        } else {
-            m = B - A - 1;
-            small = A;
+    //deep
+    public static String reverse(String str) {
+        char[] arr = str.toCharArray();
+        //System.out.println(arr);
+        int n = str.length();
+        char temp = arr[0];
+        //System.out.println(temp);
+        for (int i = 0; i < n; i++) {
+            arr[i] = arr[n - (i + 1)];
+            System.out.println(arr[n - (i + 1)]);
         }
-
-        int[] a = new int[m];
-
-        for (int i = 0; i < small; i++) {
-            a[i] = ++A;
-        }
-
-        int count = 0;
-
-        for (int i = 0; i < m; i++) {
-            for (int j= 0; j < n; j++) {
-                if (a[i] == arr[j]) count++;
-            }
-        }
-
-        if (count == a.length) return true;
-        else return false;
+        arr[n - 1] = temp;
+        String s = new String(arr);
+        return s;
     }
+
 }
