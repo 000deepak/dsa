@@ -6,19 +6,22 @@ public class test {
     public static void main(String[] args) {
         test t = new test();
         System.out.println(
-                t.removeConsecutiveCharacter("deep")
+                t.concatenatedString()
 
         );
     }
 
-    public String removeConsecutiveCharacter(String S) {
-        String line = "";
-        line = line + S.charAt(0);
+    public static boolean concatenatedString() {
+        String A = "deep";
+        String B = "ee";
 
-        for (int i = 0; i < S.length() - 1; i++) {
-            if (S.charAt(i) == S.charAt(i + 1)) continue;
-            else line += S.charAt(i + 1);
+        int i = 0, j = 0;
+
+        while (i < B.length() && j < A.length()) {
+            if (B.charAt(i) == A.charAt(j)) j++;
+            i++;
         }
-        return line;
+
+        return j == A.length();
     }
 }
