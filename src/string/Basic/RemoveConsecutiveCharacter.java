@@ -1,16 +1,9 @@
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+package string.Basic;
 
-public class test {
+public class RemoveConsecutiveCharacter {
     public static void main(String[] args) {
-        test t = new test();
-        System.out.println(
-                t.removeConsecutiveCharacter("deep")
 
-        );
     }
-
     public String removeConsecutiveCharacter(String S) {
         String line = "";
         line = line + S.charAt(0);

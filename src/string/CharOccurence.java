@@ -12,7 +12,8 @@ public class CharOccurence {
             a[s.charAt(i) - 'a']++;
         }
 
-        System.out.println(Arrays.toString(a));//[0, 0, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        System.out.println(Arrays.toString(a));
+        //[0, 0, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
         //beacause e is at 4 position
         System.out.println(a[4]);//5
