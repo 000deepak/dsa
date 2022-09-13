@@ -11,17 +11,14 @@ public class test {
         );
     }
 
-    public static boolean concatenatedString() {
-        String A = "deep";
-        String B = "ee";
+    public static Integer concatenatedString() {
+        String s = "100011100";
+        String fina = "";
 
-        int i = 0, j = 0;
-
-        while (i < B.length() && j < A.length()) {
-            if (B.charAt(i) == A.charAt(j)) j++;
-            i++;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '1') fina += s.charAt(i);
         }
 
-        return j == A.length();
+        return fina.length();
     }
 }

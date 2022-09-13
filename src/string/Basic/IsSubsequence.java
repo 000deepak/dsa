@@ -2,6 +2,19 @@ package string.Basic;
 
 /**
  * find if A is a subsequence of B.
+ * All the characters of A must be present in B,not necessarily consecative.
+ * Input:
+ * A = gksrek
+ * B = geeksforgeeks
+ * Output: 1
+ * Explanation: A is a subsequence of B.
+ *
+ * Input:
+ * A = AXY
+ * B = YADXCP
+ * Output: 0
+ * Explanation: A is not a subsequence of B
+ * as 'Y' appears before 'A'.
  */
 public class IsSubsequence {
     public static void main(String[] args) {
