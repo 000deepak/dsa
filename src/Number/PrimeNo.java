@@ -1,4 +1,4 @@
-package arrays.Basic;
+package Number;
 
 public class PrimeNo {
     public static void main(String[] args) {

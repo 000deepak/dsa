@@ -1,4 +1,4 @@
-package arrays.Basic;
+package Number;
 
 public class leapYeat {
     public static void main(String[] args) {

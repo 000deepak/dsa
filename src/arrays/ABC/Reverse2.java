@@ -1,9 +1,9 @@
-package arrays;
+package arrays.ABC;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Reverse {
+public class Reverse2 {
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 6};
         reverse1(a);
