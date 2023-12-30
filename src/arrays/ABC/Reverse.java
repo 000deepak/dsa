@@ -15,6 +15,7 @@ public class Reverse {
         System.out.println(Arrays.toString(arr));
     }
 
+    //swapping method
     static void reverseArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -24,8 +25,8 @@ public class Reverse {
             arr[start] = arr[end];
             arr[end] = temp;
             //------------------
-            start += 1;
-            end -= 1;
+            start ++;
+            end --;
         }
     }
 }
