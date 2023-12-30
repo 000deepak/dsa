@@ -1,6 +1,6 @@
 package Number;
 
-public class palindrome {
+public class Palindrome {
 
     public static void main(String[] args) {
 
@@ -38,6 +38,4 @@ public class palindrome {
         String reversed = new StringBuilder(string).reverse().toString();
         return string.equals(reversed);
     }
-
-
 }
