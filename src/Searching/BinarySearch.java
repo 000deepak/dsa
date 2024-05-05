@@ -4,31 +4,31 @@ package Searching;
  * Time Complexity : O(log n)
  */
 public class BinarySearch {
-    public int binarySearch(int[] nums, int key) {
+    public int binarySearch(int[] arr, int key) {
 
         //1.find 1st and last index
-        int low = 0;
-        int high = nums.length - 1;
+        int start = 0;
+        int end = arr.length - 1;
 
-        while (low <= high) {
+        while (start <= end) {
 
             //2.find mid
-            int mid = (high + low) / 2;
+            int mid = (end + start) / 2;
 
             //3.mid-key equality
-            if (nums[mid] == key) {
+            if (arr[mid] == key) {
                 return mid;
             }
 
-            /**4.where to find*/
-            //go right
-            if (key < nums[mid]) {
-                high = mid - 1;
+            //4.where to find
+            //go left
+            if (key < arr[mid]) {
+                end = mid - 1;
             }
 
-            //go left
+            //go right
             else {
-                low = mid + 1;
+                start = mid + 1;
             }
         }
         return -1;
@@ -36,7 +36,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         BinarySearch bs = new BinarySearch();
-        int[] nums = {1, 10, 20, 47, 59, 65, 75, 88, 99};
-        System.out.println(bs.binarySearch(nums, 65));
+        int[] arr = {1, 10, 20, 47, 59, 65, 75, 88, 99};
+        System.out.println(bs.binarySearch(arr, 65));
     }
 }

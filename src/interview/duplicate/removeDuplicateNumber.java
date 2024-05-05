@@ -13,7 +13,7 @@ public class removeDuplicateNumber {
         int[] temp = new int[n];
         int j = 0;
 
-        for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n; i++) {
             if (a[i] != a[i + 1]) {
                 temp[j++] = a[i];
             }

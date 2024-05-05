@@ -1,4 +1,4 @@
-package arrays.ABC;
+package interview.frequency;
 
 public class FrequencyOfElements {
     public static void main(String[] args) {

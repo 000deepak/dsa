@@ -1,6 +1,6 @@
 package Number;
 
-public class leapYeat {
+public class leapYear {
     public static void main(String[] args) {
         /**
          * year is divisible by 400.

@@ -1,4 +1,4 @@
-package arrays.ABC;
+package interview.reverse;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class Reverse {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 5, 6};
+        int[] arr = {1, 2, 5, 6};
         reverseArray(arr);
         System.out.println(Arrays.toString(arr));
     }

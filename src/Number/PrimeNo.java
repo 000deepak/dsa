@@ -1,8 +1,10 @@
 package Number;
 
+
+/*a number which has only 2 divisors 1 and itself is prime no*/
 public class PrimeNo {
     public static void main(String[] args) {
-        int n = 23;
+        int n = 1996;
         checkPrime(n);
     }
 
@@ -19,6 +21,6 @@ public class PrimeNo {
 
         // if count of divisors greater than 2 then its not prime
         if (count > 2) System.out.println("not prime");
-        else System.out.println("Tprime");
+        else System.out.println("prime");
     }
 }

@@ -1,4 +1,4 @@
-package arrays.Basic;
+package interview.rotate;
 
 /**
  * Given an array, rotate the array by one position in clock-wise direction.

@@ -21,8 +21,10 @@ public class BubbleSort {
     //Avg= O(n2)
     //Worst= O(n2)
     private static void bubbleSort(int[] ar) {
-        for (int i = 0; i < ar.length - 1; i++) {
-            for (int j = 0; j < ar.length - i - 1; j++) {
+        int start = 0;
+        int end = ar.length - 1;
+        for (int i = start; i < end; i++) {
+            for (int j = start; j < end - i; j++) {
                 if (ar[j] > ar[j + 1]) {
                     swap(ar, j, j + 1);
                 }
