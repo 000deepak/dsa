@@ -13,13 +13,9 @@ package interview.rotate;
 public class RotateArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
+        int n = arr.length;
 
-        rotate(arr, arr.length);
-    }
-
-    public static void rotate(int arr[], int n) {
         int temp = arr[n - 1];
-
         for (int i = 1; i < n; i++) {
             int j = i + 1;
             arr[n - i] = arr[n - j];

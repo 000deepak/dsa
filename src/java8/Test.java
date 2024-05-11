@@ -1,8 +1,9 @@
 package java8;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Test {
     public static void main(String[] args) {
@@ -17,12 +18,42 @@ public class Test {
         employees.stream().forEach(e -> System.out.println(e.getGender()));
 
         var emp = employees.stream()
-                .distinct()
-                .sorted(Comparator.comparingDouble(Employee::getSalary))
-                .skip(1)
-                .findFirst();
+                .distinct().sorted(Comparator.comparing(Employee::getName))
+                .skip(1).findFirst();
+//                .distinct()
+//                .sorted(Comparator.comparingDouble(Employee::getSalary))
+//                .skip(1)
+//                .findFirst();
 
         System.out.println(emp.get());
 
+        String str = "hello world hello";
+        Integer i = 234;
+        String s2 = String.valueOf(i);
+        Stream.of(str).map(s -> new StringBuilder(s).reverse()).collect(Collectors.joining(""));
+
+         Stream.of(s2)
+                .map(word -> new StringBuilder(word).reverse())
+                 .forEach(System.out::println);
+//                .collect(Collectors.joining(" "));
+        System.out.println(s2);
+
+//         str.chars()
+//                 .mapToObj(c->(char)c)
+//                 .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+//                 .entrySet()
+//                 .stream().filter(f->f.getValue()>1)
+//                 .forEach(s -> System.out.println(s.getKey()));
+
+
+//         List<String> list = Arrays.asList(str.split(" "));
+//        list.stream()
+//                .collect(Collectors.groupingBy(String::toLowerCase, Collectors.counting()))
+//                        .entrySet().stream()
+//                .filter(entry -> entry.getValue() > 1)
+//                .forEach((entry) -> System.out.println(entry.getKey()));
+
+//        list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+//                .entrySet().stream().filter(f->f.getValue()>1).forEach(s-> System.out.println(s.getKey()));
     }
 }

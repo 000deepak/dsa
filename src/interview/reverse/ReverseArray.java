@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Increment start and decrement end
  * If start reached to the value length/2 or start ≥ end, then terminate otherwise repeat from step 2.
  */
-public class Reverse {
+public class ReverseArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 5, 6};
         reverseArray(arr);
