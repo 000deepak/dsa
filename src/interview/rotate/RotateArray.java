@@ -14,16 +14,17 @@ import java.util.Arrays;
  */
 public class RotateArray {
     public static void main(String[] args) {
-        int[] arr= {1, 2, 3, 4, 5};
-        int end = arr.length -1 ;
-        int d = 1;
+        int[] arr = {1, 2, 3, 4, 5};
+        int start = 0;
+        int end = arr.length - 1;
+        int rotationSteps = 1;
 
-        for (int i = 1; i <= d; i++) {
-            int last = arr[0];
-            for (int j = 0; j < end; j++) {
+        for (int i = start; i < rotationSteps; i++) {
+            int first = arr[0];
+            for (int j = start; j < end; j++) {
                 arr[j] = arr[j + 1];
             }
-            arr[end] = last;
+            arr[end] = first;
         }
         System.out.println("rotated array" + Arrays.toString(arr));//[2, 3, 4, 5, 1]
     }
