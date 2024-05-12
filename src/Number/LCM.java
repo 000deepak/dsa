@@ -1,8 +1,12 @@
 package Number;
 
+//max
+//i = 1, AND codition
+//i%number
+//break
 public class LCM {
     public static void main(String[] args) {
-        int num1 = 36, num2 = 60, lcm = 0;
+        int num1 = 200, num2 = 300, lcm = 0;
 
         // finding the larger number here
         int max = (num1 > num2) ? num1 : num2;

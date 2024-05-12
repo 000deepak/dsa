@@ -23,7 +23,11 @@ public class BubbleSort {
     private static void bubbleSort(int[] ar) {
         int start = 0;
         int end = ar.length - 1;
+
+        //using 1st for-loop to calculate end in second for-loop
         for (int i = start; i < end; i++) {
+            //j will start from 0 and keep on increasing
+            //end will keep on decresing
             for (int j = start; j < end - i; j++) {
                 if (ar[j] > ar[j + 1]) {
                     swap(ar, j, j + 1);
@@ -32,10 +36,10 @@ public class BubbleSort {
         }
     }
 
-    private static void swap(int[] ar, int i, int j) {
-        int temp = ar[i];
-        ar[i] = ar[j];
-        ar[j] = temp;
+    private static void swap(int[] arr, int n1, int n2) {
+        int temp = arr[n1];
+        arr[n1] = arr[n2];
+        arr[n2] = temp;
     }
 
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package Number;
 
+//i = i, OR condition
+//number%i
 public class HCF {
     public static void main(String[] args) {
         int num1 = 25, num2 = 10, hcf = 0;
