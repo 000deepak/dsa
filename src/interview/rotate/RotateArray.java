@@ -19,6 +19,7 @@ public class RotateArray {
         int end = arr.length - 1;
         int rotationSteps = 1;
 
+        //clockwise
         for (int i = start; i < rotationSteps; i++) {
             int first = arr[0];
             for (int j = start; j < end; j++) {
@@ -26,7 +27,18 @@ public class RotateArray {
             }
             arr[end] = first;
         }
-        System.out.println("rotated array" + Arrays.toString(arr));//[2, 3, 4, 5, 1]
+        System.out.println("clockwise rotated array" + Arrays.toString(arr));//[2, 3, 4, 5, 1]
+
+
+        //anti-clockwise
+        for (int i = start; i < rotationSteps; i++) {
+            int last = arr[end];
+            for (int j = end; j > start; j--) {
+                arr[j] = arr[j - 1];
+            }
+            arr[start] = last;
+        }
+        System.out.println("anti-clockwise Rotated array: " + Arrays.toString(arr));
     }
 }
 /**
