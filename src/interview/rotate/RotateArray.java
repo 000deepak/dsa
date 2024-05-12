@@ -14,23 +14,21 @@ import java.util.Arrays;
  */
 public class RotateArray {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        int start = 0;
-        int end = arr.length - 1;
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {1, 2, 3, 4, 5};
         int rotationSteps = 1;
 
         //clockwise
-        for (int i = start; i < rotationSteps; i++) {
-            int first = arr[0];
-            for (int j = start; j < end; j++) {
-                arr[j] = arr[j + 1];
-            }
-            arr[end] = first;
-        }
-        System.out.println("clockwise rotated array" + Arrays.toString(arr));//[2, 3, 4, 5, 1]
-
+        clockwise(arr1,rotationSteps);
 
         //anti-clockwise
+        antiClockwise(arr2,rotationSteps);
+    }
+
+    public static void antiClockwise(int[] arr, int rotationSteps) {
+        int start = 0;
+        int end = arr.length - 1;
+
         for (int i = start; i < rotationSteps; i++) {
             int last = arr[end];
             for (int j = end; j > start; j--) {
@@ -38,12 +36,20 @@ public class RotateArray {
             }
             arr[start] = last;
         }
-        System.out.println("anti-clockwise Rotated array: " + Arrays.toString(arr));
+        System.out.println("anit-clockwise rotated array" + Arrays.toString(arr));
+    }
+
+    public static void clockwise(int[] arr, int rotationSteps) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        for (int i = start; i < rotationSteps; i++) {
+            int first = arr[0];
+            for (int j = start; j < end; j++) {
+                arr[j] = arr[j + 1];
+            }
+            arr[end] = first;
+        }
+        System.out.println("clockwise rotated array" + Arrays.toString(arr));
     }
 }
-/**
- * Following are steps.
- * 1) Store last element in a variable say x.
- * 2) Shift all elements one position ahead.
- * 3) Replace first element of array with x.
- */
