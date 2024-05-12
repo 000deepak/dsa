@@ -25,20 +25,6 @@ public class RotateArray {
         antiClockwise(arr2,rotationSteps);
     }
 
-    public static void antiClockwise(int[] arr, int rotationSteps) {
-        int start = 0;
-        int end = arr.length - 1;
-
-        for (int i = start; i < rotationSteps; i++) {
-            int last = arr[end];
-            for (int j = end; j > start; j--) {
-                arr[j] = arr[j - 1];
-            }
-            arr[start] = last;
-        }
-        System.out.println("anit-clockwise rotated array" + Arrays.toString(arr));
-    }
-
     public static void clockwise(int[] arr, int rotationSteps) {
         int start = 0;
         int end = arr.length - 1;
@@ -51,5 +37,19 @@ public class RotateArray {
             arr[end] = first;
         }
         System.out.println("clockwise rotated array" + Arrays.toString(arr));
+    }
+
+    public static void antiClockwise(int[] arr, int rotationSteps) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        for (int i = start; i < rotationSteps; i++) {
+            int last = arr[end];
+            for (int j = end; j > start; j--) {
+                arr[j] = arr[j - 1];
+            }
+            arr[start] = last;
+        }
+        System.out.println("anit-clockwise rotated array" + Arrays.toString(arr));
     }
 }
