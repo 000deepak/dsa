@@ -27,4 +27,15 @@ public class intervieUnsolved {
      *find the sum of values in hashmap
      *
      */
+
+    /*Intellylabz
+    * hashmap java 8 new feaures
+    * identity hashmap
+    * concurrent hashmap
+    * scenario where we use singleton design pattern
+    * implementation of second level cache
+    * cyclic dependency in beans
+    * what are various references in java
+    * garbage collection working
+    * */
 }
