@@ -1,28 +1,34 @@
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class test {
     public static void main(String[] args) {
 
-        int n = 310;
-        int n1 = 300;
-        int n2 = 200;
-        int sum = 0;
+        String s = "asdfasdf";
 
-        int[] arr = {2, 1, 5, 9, 4};
-        int key = 5;
-        int start = 0;
-        int end = arr.length - 1;
 
-        while(start <= end){
-            int mid = (start + end)/2;
-            if(arr[mid]==key) System.out.println(mid);
-            if(key < arr[mid]) end = mid -1;
-            else start = mid + 1;
+        Map<Character,Integer> fMap = new HashMap<>();
+        for(char c : s.toCharArray()){
+            fMap.put(c, fMap.getOrDefault(c,0)+1);
+        }
+
+        for(Map.Entry<Character, Integer> entry: fMap.entrySet()){
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+
+        int arr[] = {1,2,3,4,2,3,4};
+        Map<Integer,Integer> dMap = new HashMap<>();
+        for(int i : arr){
+            dMap.put(i,dMap.getOrDefault(i,0)+1);
+        }
+        for(Map.Entry<Integer,Integer> entry: dMap.entrySet()){
+            System.out.println(entry.getKey() + " " + entry.getValue());
         }
 
 
-        System.out.println(Arrays.toString(arr));
+
     }
 }

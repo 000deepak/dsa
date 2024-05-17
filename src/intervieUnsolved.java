@@ -13,12 +13,18 @@ public class intervieUnsolved {
 
     //iSynergy
     /*
-    * annotation used
-    * autowired
-    * search api
-    * security / how to secure the api
-    * what is tight coupling
-    *
-    * */
+     * annotation used
+     * autowired
+     * search api
+     * security / how to secure the api
+     * what is tight coupling
+     *
+     * */
 
+    //BNG
+    /*
+     * how to verify if the jwt token is comming from correct source
+     *find the sum of values in hashmap
+     *
+     */
 }

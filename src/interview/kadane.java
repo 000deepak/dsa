@@ -7,7 +7,7 @@ Output: 6
 */
 public class kadane {
     public static void main(String[] args) {
-        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int[] arr = {9, 10, -3, 4, -1, 2, 1, -5, -22};
         int n = arr.length;
 
         long max = 0; // maximum sum
