@@ -7,27 +7,22 @@ import java.util.Map;
 public class test {
     public static void main(String[] args) {
 
-        String s = "asdfasdf";
+        String s1 = "asdfasdf";
+        String s2 = "asdfasdf";
 
+        char[] arr = new char[26];
 
-        Map<Character,Integer> fMap = new HashMap<>();
-        for(char c : s.toCharArray()){
-            fMap.put(c, fMap.getOrDefault(c,0)+1);
+        if (s1.length() != s2.length()) System.out.println(false);
+
+        for (int i = 0; i < s1.length(); i++) {
+            arr[s1.charAt(i) - 'a']++;
+            arr[s2.charAt(i) - 'a']--;
         }
 
-        for(Map.Entry<Character, Integer> entry: fMap.entrySet()){
-            System.out.println(entry.getKey() + " " + entry.getValue());
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) System.out.println(false);
+            ;
         }
-
-        int arr[] = {1,2,3,4,2,3,4};
-        Map<Integer,Integer> dMap = new HashMap<>();
-        for(int i : arr){
-            dMap.put(i,dMap.getOrDefault(i,0)+1);
-        }
-        for(Map.Entry<Integer,Integer> entry: dMap.entrySet()){
-            System.out.println(entry.getKey() + " " + entry.getValue());
-        }
-
 
 
     }
