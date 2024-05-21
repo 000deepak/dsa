@@ -24,7 +24,9 @@ public class intervieUnsolved {
     //BNG
     /*
      * how to verify if the jwt token is comming from correct source
-     *find the sum of values in hashmap
+     * find the sum of values in hashmap
+     * race condition
+     * deadlock
      *
      */
 
@@ -37,5 +39,7 @@ public class intervieUnsolved {
     * cyclic dependency in beans
     * what are various references in java
     * garbage collection working
+    * types of garbage collectors
+    * what is semaphores
     * */
 }
