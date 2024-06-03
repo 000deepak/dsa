@@ -1,4 +1,4 @@
-public class intervieUnsolved {
+public class interviewUnsolved {
 
     /*
     * infosys
