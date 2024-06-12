@@ -5,9 +5,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static java.util.stream.Nodes.collect;
-
-public class Test {
+public class employeeSortingOnSalary {
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<>();
         employees.add(new Employee("rohani", 33, "RFP03", "Male", 20000));
@@ -28,6 +26,7 @@ public class Test {
                 .distinct()
                 .sorted(Comparator.comparingDouble(Employee::getSalary))
                 .skip(1)
+                //.map(Employee::getName) //will return the employee name with 2nd largets salary
                 .findFirst();
 
 
