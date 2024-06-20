@@ -28,47 +28,5 @@ public class employeeSortingOnSalary {
                 .skip(1)
                 //.map(Employee::getName) //will return the employee name with 2nd largets salary
                 .findFirst();
-
-
-        //reverse the string
-        String str = "hello world hello";
-        Integer i = 234;
-        String s2 = String.valueOf(i);
-        Stream.of(str).map(s -> new StringBuilder(s).reverse()).collect(Collectors.joining(""));
-
-         Stream.of(s2)
-                .map(word ->
-                        new StringBuilder(word)
-                                .reverse())
-                 .forEach(System.out::println);
-                //.collect(Collectors.joining(" "));
-        System.out.println(s2);
-
-        //duplicate characters
-         str.chars()
-                 .mapToObj(c->(char)c)
-                 .collect(Collectors
-                         .groupingBy(Function.identity(),Collectors.counting()))
-                 .entrySet()
-                 .stream().filter(f->f.getValue()>1)
-                 .forEach(s -> System.out.println(s.getKey()));
-
-
-        //duplicate words
-        List<String> list = Arrays.asList(str.split(" "));
-        list.stream()
-                .collect(Collectors.groupingBy(String::toLowerCase, Collectors.counting()))
-                .entrySet()
-                .stream()
-                .filter(entry -> entry.getValue() > 1)
-                .forEach((entry) -> System.out.println(entry.getKey()));
-
-//        //duplicate words
-//        list.stream()
-//                .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
-//                .entrySet()
-//                .stream()
-//                .filter(f->f.getValue()>1)
-//                .forEach(s-> System.out.println(s.getKey()));
     }
 }

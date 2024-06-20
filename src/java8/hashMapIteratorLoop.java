@@ -9,16 +9,12 @@ public class hashMapIteratorLoop {
         map.put("one", 1000);
         map.put("two", 2000);
 
-//        int sum = map.values().stream().mapToInt(Integer::intValue).sum();
-//        System.out.println(sum + " Sum");
-//
-//        map.entrySet().stream().forEach(e -> System.out.println(e.getKey()));
-//
-//        Iterator<Map.Entry<String, Integer>> itr = map.entrySet().iterator();
-//        while (itr.hasNext()) {
-//            Map.Entry<String, Integer> entry = itr.next();
-//            System.out.println(entry.getKey());
-//        }
+        //print sum of values of hashmpa
+        int sum = map.values().stream().mapToInt(Integer::intValue).sum();
+        System.out.println(sum + " Sum");
+
+        //get keys
+        map.entrySet().stream().forEach(e -> System.out.println(e.getKey()));
 
         //Obtain an Iterator for the HashMap
         Iterator<Map.Entry<String, Integer>> itr = map.entrySet().iterator();
