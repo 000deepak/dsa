@@ -8,7 +8,7 @@ In binary representation, each bit of a number has a position, starting from the
 ### Method 1: Using Bitwise AND and Shift Left
 
 **Formula:**
-\[ \text{(N \& (1 << i)) \neq 0} \]
+(N & (1 << i)) != 0
 
 **Explanation:**
 1. **Shift left (`1 << i`)**: Create a number with only the i-th bit set to 1. This is done by shifting the number 1 left by \( i \) positions.
@@ -25,7 +25,7 @@ In binary representation, each bit of a number has a position, starting from the
 ### Method 2: Using Shift Right and Bitwise AND
 
 **Formula:**
-\[ \text{((N >> i) \& 1) \neq 0} \]
+((N >> i) \& 1) != 0
 
 **Explanation:**
 1. **Shift right (`N >> i`)**: Shift the bits of \( N \) right by \( i \) positions. This moves the i-th bit to the least significant bit (0th position).
