@@ -35,3 +35,36 @@ For an 8-bit binary number `11001010`:
 - **MSB**: Used in determining the magnitude and sign of binary numbers, especially in signed integer representations.
 
 Understanding MSB and LSB is fundamental in fields such as computer architecture, digital electronics, and programming.
+
+# java code
+```java
+import java.util.Scanner;
+
+public class CountSetBits {
+
+    // Function to count the number of set bits in an integer
+    public static int countSetBits(int N) {
+        int count = 0;
+        while (N > 0) {
+            N = N & (N - 1); // Unset the least significant set bit
+            count++;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        // Create a scanner object for input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for input
+        System.out.print("Enter an integer: ");
+        int number = scanner.nextInt();
+
+        // Count the number of set bits
+        int setBitsCount = countSetBits(number);
+
+        // Print the result
+        System.out.println("Number of set bits in " + number + " is: " + setBitsCount);
+    }
+}
+```

@@ -30,11 +30,11 @@ public class RotateArray {
         int end = arr.length - 1;
 
         for (int i = start; i < rotationSteps; i++) {
-            int first = arr[0];
+            int temp = arr[0];
             for (int j = start; j < end; j++) {
                 arr[j] = arr[j + 1];
             }
-            arr[end] = first;
+            arr[end] = temp;
         }
         System.out.println("clockwise rotated array" + Arrays.toString(arr));
     }
@@ -44,11 +44,11 @@ public class RotateArray {
         int end = arr.length - 1;
 
         for (int i = start; i < rotationSteps; i++) {
-            int last = arr[end];
+            int temp = arr[end];
             for (int j = end; j > start; j--) {
                 arr[j] = arr[j - 1];
             }
-            arr[start] = last;
+            arr[start] = temp;
         }
         System.out.println("anit-clockwise rotated array" + Arrays.toString(arr));
     }
