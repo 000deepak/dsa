@@ -79,3 +79,100 @@ So, 11101101 in decimal is **-19**.
 - **Binary to Positive Decimal:** Sum of powers of 2.
 - **Negative Decimal to Binary:** Two's complement (invert and add 1).
 - **Binary to Negative Decimal:** Identify negative, invert, add 1, convert, and add negative sign.
+
+
+# decimal to binary
+```java
+//using stringbuilder
+public class DecimalToBinary {
+
+    // Function to convert decimal to binary
+    public static String decimalToBinary(int N) {
+        // Edge case for 0
+        if (N == 0) {
+            return "0";
+        }
+
+        // StringBuilder to hold binary representation
+        StringBuilder binary = new StringBuilder();
+
+        // Perform division and record remainders
+        while (N > 0) {
+            int remainder = N % 2;
+            binary.append(remainder);
+            N = N / 2;
+        }
+
+        // Reverse the string since we appended remainders from least significant bit
+        return binary.reverse().toString();
+    }
+
+    public static void main(String[] args) {
+        // Create a scanner object for input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for input
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        // Convert the number to binary and print the result
+        String binaryRepresentation = decimalToBinary(number);
+        System.out.println("Binary representation of " + number + " is: " + binaryRepresentation);
+    }
+}
+
+
+//inbuilt method
+public class BinaryRepresentation {
+    public static void main(String[] args) {
+        // Example usage
+        int number = 19;
+        System.out.println("Binary representation of " + number + " is: " + toBinary(number));
+    }
+
+    // Function to convert a number to its binary representation
+    public static String toBinary(int number) {
+        // Use built-in method to convert to binary string
+        return Integer.toBinaryString(number);
+    }
+}
+```
+
+# binary to decimal
+```java
+import java.util.Scanner;
+
+public class BinaryToDecimal {
+
+    // Function to convert binary to decimal
+    public static int binaryToDecimal(String binaryString) {
+        // Initialize result to 0
+        int decimal = 0;
+        // Iterate over each character in the binary string
+        for (int i = 0; i < binaryString.length(); i++) {
+            // Get the current character ('0' or '1')
+            char c = binaryString.charAt(i);
+            // Convert char to int (either 0 or 1)
+            int digit = Character.getNumericValue(c);
+            // Calculate decimal value by shifting and adding current bit
+            decimal = decimal * 2 + digit;
+        }
+        return decimal;
+    }
+
+    public static void main(String[] args) {
+        // Create a scanner object for input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for input
+        System.out.print("Enter a binary number: ");
+        String binaryNumber = scanner.nextLine();
+
+        // Convert the binary number to decimal
+        int decimalRepresentation = binaryToDecimal(binaryNumber);
+
+        // Print the result
+        System.out.println("Decimal representation of " + binaryNumber + " is: " + decimalRepresentation);
+    }
+}
+```
