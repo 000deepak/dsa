@@ -16,17 +16,28 @@ public class employeeSortingOnSalary {
 
         employees.stream().forEach(e -> System.out.println(e.getGender()));
 
+        //sort employees by name
         var empName = employees.stream()
                 .distinct()
                 .sorted(Comparator.comparing(Employee::getName))
                 .skip(1)
                 .findFirst();
 
+        //sort employees according to salaries
         var empSalary = employees.stream()
                 .distinct()
                 .sorted(Comparator.comparingDouble(Employee::getSalary))
                 .skip(1)
                 //.map(Employee::getName) //will return the employee name with 2nd largets salary
                 .findFirst();
+
+        //group employees by age
+        Map<Integer, List<Employee>> employeesByDepartment = employees.stream()
+                .collect(Collectors.groupingBy(Employee::getAge));
+
+        // Using streams to find the maximum salary
+        Employee maxSalaryEmployee = employees.stream()
+                .max(Comparator.comparingDouble(Employee::getSalary))
+                .orElseThrow(() -> new RuntimeException("No employees found"));
     }
 }
