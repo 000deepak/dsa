@@ -39,5 +39,29 @@ public class employeeSortingOnSalary {
         Employee maxSalaryEmployee = employees.stream()
                 .max(Comparator.comparingDouble(Employee::getSalary))
                 .orElseThrow(() -> new RuntimeException("No employees found"));
+
+        //second larget number
+        //case 1 : reuturn integer
+        int[] arr = {1,5,3,4,9};
+        int secondLargestNumber = Arrays.stream(arr)
+                .distinct()
+                .boxed() //Convert int to Integer to use Comparator || IntStream to Stream<Integer>
+                .sorted(Collections.reverseOrder())
+                .skip(1)
+                .findFirst()
+                .orElseThrow(()-> new IllegalArgumentException("illegal argument"));
+
+        //case 2 : return optional
+        Optional<Integer> secondHighest = Arrays.stream(arr)
+                .boxed() // Convert IntStream to Stream<Integer>
+                .sorted(Collections.reverseOrder()) // Sort in descending order
+                .skip(1) // Skip the first element (the highest one)
+                .findFirst(); // Get the first element after skipping
+
+        secondHighest.ifPresentOrElse(
+                num -> System.out.println("The second highest number is: " + num),
+                () -> System.out.println("No second highest number found")
+        );
     }
+
 }
