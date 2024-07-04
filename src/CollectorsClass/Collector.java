@@ -1,5 +1,7 @@
-package latest.Collector;
+package CollectorsClass;
 
+
+import latest.Collector.Citizen;
 
 import java.util.*;
 import java.util.stream.Collectors;
