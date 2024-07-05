@@ -31,6 +31,10 @@ public class employeeSortingOnSalary {
                 //.map(Employee::getName) //will return the employee name with 2nd largets salary
                 .findFirst();
 
+        //average salary
+        var avgSalary = employees.stream()
+                .collect(Collectors.averagingDouble(Employee::getSalary));
+
         //group employees by age
         Map<Integer, List<Employee>> employeesByDepartment = employees.stream()
                 .collect(Collectors.groupingBy(Employee::getAge));
