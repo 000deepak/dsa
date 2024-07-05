@@ -2,6 +2,14 @@ package Sorting;
 
 import java.util.Arrays;
 
+/*
+* The time complexity of Merge Sort in the worst case, best case, and average case is: O(nlogn)
+* STRATEGY -
+* Divide: The array is divided into two halves.
+* Conquer: Each half is sorted recursively.
+* Combine: The two sorted halves are merged to form a sorted array.
+*
+* */
 public class MergeSort {
 
     // Main method to sort an array using merge sort
