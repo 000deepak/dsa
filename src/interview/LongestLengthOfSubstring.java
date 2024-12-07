@@ -7,11 +7,13 @@ public class LongestLengthOfSubstring {
     public static void main(String[] args) {
         LongestLengthOfSubstring solution = new LongestLengthOfSubstring();
         String input = "abcabcbb";
-        int result = solution.lengthOfLongestSubstring(input);
-        System.out.println("The length of the longest substring without repeating characters is: " + result);
+        String str = "aabbbccccbbaa";
+        int nonRepeat = solution.lengthOfLongestNonRepeating(input);
+        int repeat = solution.lengthOfRepeating(str);
+        System.out.println("The length of the longest substring: " + nonRepeat + "  " + repeat);
     }
 
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestNonRepeating(String s) {
         int n = s.length();
         int maxLength = 0;
         int left = 0;
@@ -24,6 +26,26 @@ public class LongestLengthOfSubstring {
             }
             set.add(s.charAt(right));
             maxLength = Math.max(maxLength, right - left + 1);
+        }
+
+        return maxLength;
+    }
+
+    public static int lengthOfRepeating(String s) {
+        int n = s.length();
+        int maxLength = 0;
+        int i = 0, j = 0;
+        Set<Character> set = new HashSet<>();
+
+        while (j < n) {
+            if (!set.contains(s.charAt(j))) {
+                set.add(s.charAt(j));
+                j++;
+                maxLength = Math.max(maxLength, j - i);
+            } else {
+                set.remove(s.charAt(i));
+                i++;
+            }
         }
 
         return maxLength;
