@@ -318,6 +318,19 @@
 - **Check if two strings are anagrams**: [Watch here](https://youtu.be/SFF3ND7TPc0)
 - **Reverse Words in a String - iii**: [Watch here](https://youtu.be/ajhV7EYLfOY)
 
+### String Manipulation Questions
+- **Longest Palindrome**: TBD
+- **Find All Anagrams**: TBD
+- **K-Anagrams**: TBD
+- **Roman to Integer**: TBD
+- **First Repeated Word in a String**: TBD
+- **Isomorphic String Checker**: TBD
+
+## String Algorithms
+- **Rabin Karp Algorithm**: TBD
+- **KMP Algorithm**: TBD
+- **LPS Algorithm**: TBD
+
 ## Stack
 ### Stack Data Structure: 
 [Watch here](https://youtu.be/TpuQWpma7ug)
@@ -506,13 +519,9 @@
 - **Split a Circular Linked List into Two Circular Lists**: [Watch here](https://youtu.be/dBxiAxuT2I8?si=utMWpF083dismeIJ)
 - **Clone a Linked List with Random and Next Pointer**: TBL
 
-## Algorithms
-- **Rabin Karp Algorithm**: TBD
-- **KMP Algorithm**: TBD
-- **LPS Algorithm**: TBD
-
-## Hashing
-- **Hashing**: [Watch here](https://youtu.be/vB3WKXNH-v4?si=oAOjWmxgCLXQvjC2)
+# Hashing
+## Hashing: 
+- [Watch here](https://youtu.be/vB3WKXNH-v4?si=oAOjWmxgCLXQvjC2)
     - Components of Hashing
     - How Hashing Works?
     - Types of Hash Functions
@@ -523,28 +532,29 @@
     - Rehashing
     - Applications and Advantages
 
-- **Hashmap Data Structure**: [Watch here](https://youtu.be/CMA0MQQ3jhA?si=qi9VRUEUv4Rldbv2)
+### Hashmap Data Structure: 
+- [Watch here](https://youtu.be/CMA0MQQ3jhA?si=qi9VRUEUv4Rldbv2)
     - What is Hashmap?
     - How to Use Custom Key-Value Pair
 
-## HashMap in Java
+### HashMap in Java
 - [Implement HashMap in Java](https://youtu.be/B4VukYcQG_E?si=D4bP5zpwtOFPzNQM)
     - All Methods
     - Hashcode function
     - Rehashing
 
-## Array Questions
+### Array Questions
 - [Most frequent element in an array](https://youtu.be/O5iUfFHxCZc?si=wKCy3r5x7hgIDEib)
 - [Check if an array is subset of another array](https://youtu.be/V4hi-l-xNXU?si=LMEB14_uTicW-6vM)
 - [Count Pairs with given sum](https://youtu.be/NC9r8D2QnHk?si=nWVnSK7h3P9V8k7u)
 
-## HashSet Data Structure
+### HashSet Data Structure
 - [Hashset Data Structure](https://youtu.be/3euKVlloIWY?si=Uvz3qkcdHLlIsnbX)
     - What is hashset data structure
     - Usage of map keys
     - Set Iterator
 
-## K-SUM Subarray Pattern Questions
+### K-SUM Subarray Pattern Questions
 - [Minimum number of subsets with distinct elements](https://youtu.be/h6jzp9waCyk?si=GTlG-0HGVxzwzuvK)
 - [Check if subarray with K sum Exists or Not](https://youtu.be/S6tARGbBGEo?si=7wRtd-jYnSdHRYmk)
 - [Find the starting and ending index of K sum subarray](https://youtu.be/S6tARGbBGEo?si=7wRtd-jYnSdHRYmk)
@@ -588,7 +598,7 @@
     - Child of a node in tree
     - Parent of a node in tree
 
-## Tree Traversal
+### Tree Traversal
 - **BFS**: [Watch here](https://youtu.be/4NZV0XBbKfA?si=wn_pcNP-l7dmDcXA)
 - **BFS on N-Ary Trees**: [Watch here](https://youtu.be/4NZV0XBbKfA?si=wn_pcNP-l7dmDcXA)
 - **DFS - Recursive**: [Watch here](https://youtu.be/aQKJ9juD87k?si=Gou7Ob0zLS2xOoU2)
@@ -596,7 +606,7 @@
 - **Inorder Iterative**: [Watch here](https://youtu.be/-VzRxq3Jwp4?si=8XJFCAnFCXWss35l)
 - **Postorder Iterative**: [Watch here](https://youtu.be/xEPe6aWlRd0?si=rRWVNq5RgT8w9Z6e)
 
-## Questions
+### Questions
 - **Construct tree using inorder and postorder**: [Watch here](https://youtu.be/uDuOuMcSHwo?si=8bymVQfdrdovJImK)
 - **Maximum Depth of Binary Tree**: [Watch here](https://youtu.be/zbZEcUV0t7k?si=iyca3V-SbEKcEthY)
 - **Maximum Depth of N-Ary Tree**: [Watch here](https://youtu.be/Mehu7yep3ag?si=jVmAzUOxVZRD-JYV)
@@ -625,19 +635,12 @@
 - **Binary Search Tree Iterator**: [Watch here](https://youtu.be/V9J9gGIVt_E)
 - **Maximum Sum BST in Binary Tree**: [Watch here](https://youtu.be/zAz-WbqIaf8)
 
-## Flood fill algorithm in BT
-- TBD
+### Flood fill algorithm in BT
+### Segment tree
+### Range query
+### Red Black Tree
 
-## Segment tree
-- TBD
-
-## Range query
-- TBD
-
-## Red Black Tree
-- TBD
-
-## AVL Tree
+### AVL Tree
 - [AVL Trees](https://youtu.be/QEvpN09q3nw)
     1. AVL Trees
     2. Balanced Trees
@@ -667,7 +670,7 @@
     10. Build heap from array
     11. Complete Tree
 
-## Priority Queue in one shot
+### Priority Queue in one shot
 - [Priority Queue in one shot](https://youtu.be/XGfa9jnDJNY)
     1. Priority Queue in Java collections
     2. Priority Queue on custom classes.
@@ -675,7 +678,7 @@
     4. DSA playlist
     5. Equate objects in pq
 
-## Questions
+### Questions
 - [Top K Frequent Elements](https://youtu.be/bXbiLwGSZHU)
 - [Sort Characters by frequency](https://youtu.be/zPB7j1TMTDM)
 - [IPO](https://youtu.be/sdCvHi2i03E)
