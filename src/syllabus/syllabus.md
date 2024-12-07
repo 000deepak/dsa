@@ -112,7 +112,7 @@
     - Find trailing zeros in a factorial
     - Ceiling and floor of a number
 
-### Bits Manipulation
+## Bits Manipulation
 - **Bits and Binary Operations**  
   [Video Link](https://youtu.be/cn_KKSd3T2g)
     - Least Significant Bits
@@ -125,9 +125,8 @@
     - Left shift and Right shift
     - Trick to divide or multiply any number
     - Bitwise NOT, Bitwise AND, Bitwise OR
-
-## Play with Bits / Bit Manipulation
-- [YouTube Link](https://youtu.be/wGrEXbLQX1k)
+- **Play with Bits / Bit Manipulation**
+  [YouTube Link](https://youtu.be/wGrEXbLQX1k)
     - Find the i-th Bit
     - Set the i-th Bit
     - Toggle the i-th Bit
@@ -137,9 +136,8 @@
     - Find if a number is power of 2.
     - Count the number of set bits.
     - Unset the right most set bit.
-
-## Bit Manipulation
-- [YouTube Link](https://youtu.be/UTVvLfkuSEs)
+- **Bit Manipulation
+  [YouTube Link](https://youtu.be/UTVvLfkuSEs)
     - Bitwise Operators
     - Bit Manipulation
     - Bit Masking
@@ -215,52 +213,13 @@
     - Q20. Median of two sorted arrays - [YouTube Link](https://youtu.be/2BOgAlmyTkc)
     - Q21. Kth element of two sorted arrays - [YouTube Link](https://youtu.be/SB6j8D95eHM)
 
-## Questions on Binary Search Part 1
-[Video Link](https://youtu.be/P-vl_BrdxJA)
-- Q1. Ceiling of a Number
-- Q2. Floor of a Number
-- Q3. First and Last Position of element in sorted array
-- Q4. Count all occurrence of element in an array
-- Q5. Next smallest letter in sorted array
-
-## Questions on Binary Search Part 2
-[Video Link](https://youtu.be/DoVawmdh5NM)
-- Binary Search in range
-- Q6. Find Minimum Difference in a Sorted array.
-- Q7. Find an element in an array of Infinite size
-- Q8. Find first 1 in an infinite and sorted array of 0s and 1s
-
-## Questions on Binary Search Part 3
-[Video Link](https://youtu.be/IK5eSvNw9Qw)
-- Bitonic Array
-- Q9. Find pivot in bitonic array
-- Q10. search in bitonic array
-
-## Questions on Binary Search Part 4
-[Video Link](https://youtu.be/n12QcCu8oBI)
-- Sorted and Rotated Array (Clockwise and Anticlockwise)
-- Q11. count number of rotations
-- Q12. search in rotated sorted array ( with and without duplicates)
-- Q13 Find min / max (peak) element in rotated and sorted array
-
-## Questions on Binary Search Part 5
-[Video Link](https://youtu.be/_4LmUWmmYbY)
-- Q14. Allocated minimum number of pages
-- Q15. Capacity to Ship within D Days
-- Q16. Koko Eating bananas [Video Link](https://youtu.be/BUFHoQIOnAs)
-- Q17. Smallest Divisor given a threshold [Video Link](https://youtu.be/pSGtbhpuhbk)
-- Q18. Minimize Maximum of products distributed to any store [Video Link](https://youtu.be/4O6wrTtUQvY)
-- Q19. Aggressive cows [Video Link](https://youtu.be/86xSPxfc4iQ)
-- Q20. Median of two sorted arrays [Video Link](https://youtu.be/2BOgAlmyTkc)
-- Q21. Kth element of two sorted arrays [Video Link](https://youtu.be/SB6j8D95eHM)
-
-## Questions on Binary Search Part 6
+### Questions on Binary Search Part 6
 [Video Link](https://youtu.be/f09DayNeigg)
 - Q22. Single Element in a Sorted Array
 - Q23. Finding square root
 - Q24. Count Squares
 
-## Other Searching Algorithms
+### Other Searching Algorithms
 [Video Link](https://youtu.be/rFwBm-VT99A)
 - Jump Search
 - Interpolation Search
@@ -316,7 +275,8 @@
 - **Return the smallest positive number missing**: TBD
 
 ## String Manipulation
-- **Strings in Java**: [Watch here](https://youtu.be/aqjGYjtczvY)
+### Strings in Java:
+[Watch here](https://youtu.be/aqjGYjtczvY)
     - characters
     - string literals
     - string constant pool
@@ -326,7 +286,8 @@
     - String with new operator
     - Reference Comparison
 
-- **More on Strings**: [Watch here](https://youtu.be/rXSUJ-PwU4g)
+### More on Strings: 
+[Watch here](https://youtu.be/rXSUJ-PwU4g)
     - String Builder
     - String Buffer
     - Next vs NextLine
@@ -343,7 +304,8 @@
     - toUpperCase function
     - toCharArray function
 
-- **Playing with String**: [Watch here](https://youtu.be/SrPyIYakYt8)
+### Playing with String: 
+[Watch here](https://youtu.be/SrPyIYakYt8)
     - Input Buffer and delimiters
     - String formatting
     - String Concatenation
@@ -357,12 +319,12 @@
 - **Reverse Words in a String - iii**: [Watch here](https://youtu.be/ajhV7EYLfOY)
 
 ## Stack
-- **Stack Data Structure**: [Watch here](https://youtu.be/TpuQWpma7ug)
+### Stack Data Structure: 
+[Watch here](https://youtu.be/TpuQWpma7ug)
     - Stack
     - Stack using Arrays
 
-## Questions and Resources
-
+### Questions and Resources
 - **Check parenthesis**: [Video](https://youtu.be/CNOoP25NpfQ)
 - **Remove minimum brackets to balance string**: [Video](https://youtu.be/FB6wSdPjVGw)
 - **Add minimum brackets to balance string**: [Video](https://youtu.be/BNFBv1KtcDM)
@@ -378,7 +340,6 @@
 - **Longest Valid Parentheses**: [Video](https://youtu.be/gqQsbdTcey0)
 
 ## Queue Data Structure
-
 - **Queue**: [Video](https://youtu.be/9m4SZPRQXQI?si=izPej7j2qhbiKrys)
     - Queue
     - Queue using Array
@@ -393,7 +354,6 @@
 - **Find Maximum and Minimum of Every Window Size**: TBL
 
 ## Object Oriented Programming
-
 - **Classes and Objects**: [Video](https://youtu.be/yGT6-P3XGrg?si=A8C7Bhnk9Jw9_3Eo)
 - **Pillars of OOP**: [Video](https://youtu.be/G5djyUY_LKc?si=3pWEptBtHSDmXZdw)
 - **Inheritance**: [Video](https://youtu.be/5_pMrxQ17rY?si=3KP2Dq9CFLHYbF4r)
@@ -462,8 +422,8 @@
 - Q. Reverse Pairs: TBD
 - Q. The Celebrity Problem: TBD
 
-## Recursion
-### Recursion - I
+# Recursion
+## Recursion - I
 - Playing with function calls
 - Types of recursion
 - Q. Convert decimal to binary
@@ -471,7 +431,7 @@
 - Q. Reverse an array inplace
 - Q. Reverse a stack
 
-### Recursion - II
+## Recursion - II
 - Leap of Faith
 - Q. Tower of Hanoi
 - Q. Count ways in a Matrix
@@ -502,10 +462,10 @@
 - Q. Sudoku Solver
 - Q. Josephus problem - Kill in circle
 
-### Recursion - III
+## Recursion - III
 - Binary Search using recursion
 
-## Divide and Conquer
+### Divide and Conquer
 - Q. Calculating power (x^n)
 - Q. Merge Sort
 - Q. Quick Sort
@@ -526,7 +486,7 @@
     - All operations and their time complexity
     - Implementation of linked list
 
-## Linked List Questions
+### Linked List Questions
 - **Find Middle of Linked List (Hare Tortoise Algorithm)**: [Watch here](https://youtu.be/NUbqd8-lHl4?si=gByqGlulWwtiPV__)
 - **Delete Middle of Linked List**: [Watch here](https://youtu.be/uLlJJHpq7hw?si=Fm2c_sOMqUx5QPqP)
 - **Pairwise Swap Nodes of Linked List**: [Watch here](https://youtu.be/92f3L2p31Oc?si=oyC441Kt3bph4ZCZ)
@@ -545,14 +505,6 @@
 - **Merge Sort on Linked List**: [Watch here](https://youtu.be/13UkRumpqZw?si=uw-eXXBmA6YeHaFu)
 - **Split a Circular Linked List into Two Circular Lists**: [Watch here](https://youtu.be/dBxiAxuT2I8?si=utMWpF083dismeIJ)
 - **Clone a Linked List with Random and Next Pointer**: TBL
-
-## String Manipulation Questions
-- **Longest Palindrome**: TBD
-- **Find All Anagrams**: TBD
-- **K-Anagrams**: TBD
-- **Roman to Integer**: TBD
-- **First Repeated Word in a String**: TBD
-- **Isomorphic String Checker**: TBD
 
 ## Algorithms
 - **Rabin Karp Algorithm**: TBD
