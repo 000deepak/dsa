@@ -32,10 +32,10 @@ public class MaxSubarraySizeKOrSlidingWindow {
     public static void main(String[] args) {
         int[] arr = {2, 1, 5, 1, 3, 2};
         int k = 3;
-        System.out.println("Maximum sum of a subarray of size " + k + ": " + maxSubarraySum(arr, k));
+//        System.out.println("Maximum sum of a subarray of size " + k + ": " + maxSubarraySum(arr, k));
 
         int[] arr2 = {1, 9, -1, 3, -2, 3, 5};
-        System.out.println("Maximum sum of a subarray of size " + k + ": " + maxSubarraySum(arr2, k));
+//        System.out.println("Maximum sum of a subarray of size " + k + ": " + maxSubarraySum(arr2, k));
     }
 }
 
