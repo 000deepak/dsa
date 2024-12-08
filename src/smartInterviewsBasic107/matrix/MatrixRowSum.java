@@ -1,19 +1,24 @@
-package smartInterviewsBasic107;
+package smartInterviewsBasic107.matrix;
 
-//Matrix Column Sum
-//Given a matrix of size N x M, print column-wise sum, separated by a newline.
+//Matrix Row Sum
+//Given a matrix of size N x M, print row-wise sum, separated by a newline.
+//
+//
+//
+//Note:
+//
+//Try to solve this without declaring / storing the matrix.
 //
 //
 //
 //Input Format
-//
 //The first line of input contains N, M - the size of the matrix, followed by N lines each containing M integers - elements of the matrix.
 //
 //
 //
 //Output Format
 //
-//Print the column-wise sum of the matrix, separated by newline.
+//Print the row-wise sum of the matrix, separated by a newline.
 //
 //
 //
@@ -29,19 +34,19 @@ package smartInterviewsBasic107;
 //
 //Input
 //
-//2 2
+//2 3
 //
-//5 -1
+//5 -1 3
 //
-//19 8
+//19 8 -5
 //
 //
 //
 //Output
 //
-//24
-//
 //7
+//
+//22
 //
 //
 //
@@ -50,5 +55,5 @@ package smartInterviewsBasic107;
 //
 //
 //Self Explanatory
-public class MatrixColumnSum {
+public class MatrixRowSum {
 }
