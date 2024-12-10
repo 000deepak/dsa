@@ -67,6 +67,17 @@ public class BinarySearchForArraySortedInAscendingOrder {
         return -1;  // Return -1 if the element is not found
     }
 
+    static void binarySearchOrderAgnostic(int arr[], int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        if (arr[start] <= arr[end]) {
+            BinarySearchForArraySortedInAscendingOrder(arr, target);
+        } else {
+            BinarySearchForArraySortedInDescendingOrder(arr, target);
+        }
+    }
+    
+
     public static void main(String[] args) {
         BinarySearch bs = new BinarySearch();
         int[] arr = {1, 10, 20, 47, 59, 65, 75, 88, 99};
