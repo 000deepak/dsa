@@ -11,6 +11,7 @@ public class BinarySearch {
         int start = 0;
         int end = arr.length - 1;
 
+        //to loop from o to n-1 all elements
         while (start <= end) {
 
             //2.find mid
