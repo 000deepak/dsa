@@ -3,6 +3,7 @@ package Searching;
 /**
  * Works Only For Sorted Arrays
  * Time Complexity : O(log n)
+ * Whenever data is sorted always use binary search
  */
 public class BinarySearchForArraySortedInAscendingOrder {
     public int binarySearch(int[] arr, int key) {
@@ -75,6 +76,34 @@ public class BinarySearchForArraySortedInAscendingOrder {
         } else {
             BinarySearchForArraySortedInDescendingOrder(arr, target);
         }
+    }
+
+    // Function to find the first or last occurrence of the key
+    public int binarySearchFirstAndLastIndex(int[] arr, int key, boolean isFirst) {
+        int start = 0;
+        int end = arr.length - 1;
+        int result = -1; // Default value when the key is not found
+
+        while (start <= end) {
+            int mid = (start + end) / 2;
+
+            if (arr[mid] == key) {
+                result = mid;
+                if (isFirst) {
+                    // If we are looking for the first occurrence, move left
+                    end = mid - 1;
+                } else {
+                    // If we are looking for the last occurrence, move right
+                    start = mid + 1;
+                }
+            } else if (key < arr[mid]) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+
+        return result;
     }
     
 
