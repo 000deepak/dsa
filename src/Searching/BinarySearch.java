@@ -1,6 +1,7 @@
 package Searching;
 
 /**
+ * Works Only For Sorted Arrays
  * Time Complexity : O(log n)
  */
 public class BinarySearch {
