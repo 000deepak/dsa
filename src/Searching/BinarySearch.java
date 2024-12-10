@@ -105,6 +105,26 @@ public class BinarySearchForArraySortedInAscendingOrder {
 
         return result;
     }
+
+    // Function to find the number of occurrences of the key/element in sorted array
+    //find 8, [1.4.6,7,7,8,8,8,8,4]
+    //8 - 5 + 1
+    //4
+    public int countOccurrences(int[] arr, int key) {
+        // Find the first occurrence
+        int firstIndex = binarySearchFirstAndLastIndex(arr, key, true);
+        
+        // If key is not found, return 0
+        if (firstIndex == -1) {
+            return 0;
+        }
+        
+        // Find the last occurrence
+        int lastIndex = binarySearchFirstAndLastIndex(arr, key, false);
+        
+        // The number of occurrences is the difference between last and first index + 1
+        return lastIndex - firstIndex + 1;
+    }
     
 
     public static void main(String[] args) {
