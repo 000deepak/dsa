@@ -15,7 +15,7 @@ public class BinarySearch {
         while (start <= end) {
 
             //2.find mid
-            int mid = (end + start) / 2;
+            int mid = (start + end) / 2;
 
             //3.mid-key equality
             if (arr[mid] == key) {
