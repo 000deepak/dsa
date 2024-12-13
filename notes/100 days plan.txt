@@ -1,0 +1,19 @@
+﻿100 days plan
+
+
+Array    5
+Matrix(2d array)   5
+String    5
+searching&sorting 5
+Linkedlist 5
+Binary Tree  5
+BSt  5
+Greedy  5
+Backtracking  5
+Stack & ques  5
+Heap  5
+Hashing 5
+Graph  5
+Trie  5
+DP  5
+Bit Manipulation  5

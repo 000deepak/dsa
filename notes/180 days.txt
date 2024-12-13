@@ -1,0 +1,18 @@
+﻿6 month plan
+
+
+Array    10
+Matrix(2d array)   10
+String    10
+searching&sorting 10
+Linkedlist 10
+Binary Tree  10
+BSt  10
+Greedy  10
+Backtracking  10
+Stack & ques  10
+Heap  10
+Graph  10
+Trie  10
+DP  10
+Bit Manipulation  10
