@@ -1,5 +1,11 @@
 package Number;
 
+//Quick Check:
+//Factors of 6: 1,2,3,6
+//Multiples of 6: 6,12,18,24
+
+/*Every multiple of a number is greater than or equal to that number.*/
+
 //max
 //i = 1, AND codition
 //i%number
