@@ -1,20 +1,47 @@
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class test {
-    public static void main(String[] args) {
-        int[] arr = {1,3,5,7,8};
-        int start = 0;
-        int end = arr.length -1;
+        public static void main(String[] args) {
 
-        for(int i = 0; i< end; i++){
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
+            //character
+            String str = "hellojava";
+            freqOfChar(str);
+
+
+            //number
+            int[] arr = {1, 2, 3, 4, 5, 2, 3, 4, 2, 1};
+            freqOfNumber(arr);
         }
 
-        System.out.println(Arrays.toString(arr));
+    public static void freqOfChar(String str) {
+        Map<Character, Integer> charFrequencyMap = new HashMap<>();
+
+        for (char c : str.toCharArray()) {
+            // Increment the frequency count of the character
+            charFrequencyMap.put(c, charFrequencyMap.getOrDefault(c, 0) + 1);
+        }
+
+        for (Map.Entry<Character, Integer> entry : charFrequencyMap.entrySet()) {
+            if (entry.getValue() >= 1) {
+                System.out.println(entry.getKey() + " - " + entry.getValue() + " times");
+            }
+        }
     }
 
+    public static void freqOfNumber(int[] arr) {
+        Map<Integer, Integer> numberFrequencyMap = new HashMap<>();
+
+        for (int i : arr) {
+            // Increment the frequency count of the character
+            numberFrequencyMap.put(i, numberFrequencyMap.getOrDefault(i, 0) + 1);
+        }
+
+        for (Map.Entry<Integer, Integer> entry : numberFrequencyMap.entrySet()) {
+            if (entry.getValue() >= 1) {
+                System.out.println(entry.getKey() + " - " + entry.getValue() + " times");
+            }
+        }
+    }
 }
