@@ -53,4 +53,41 @@ package smartInterviewsBasic107.array;
 //
 //Self Explanatory
 public class MergeTwoSortedArrays {
+  public static int[] mergeSortedArrays(int[] A, int[] B) {
+        int n = A.length;
+        int m = B.length;
+        int[] result = new int[n + m]; // Array to store merged results
+        int i = 0, j = 0, k = 0;
+
+        // Merge the arrays
+        while (i < n && j < m) {
+            if (A[i] < B[j]) {
+                result[k++] = A[i++];
+            } else {
+                result[k++] = B[j++];
+            }
+        }
+
+        // Add remaining elements of A
+        while (i < n) {
+            result[k++] = A[i++];
+        }
+
+        // Add remaining elements of B
+        while (j < m) {
+            result[k++] = B[j++];
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] A = {1, 3, 5, 7}; // Example array A
+        int[] B = {2, 4, 6, 8, 10}; // Example array B
+
+        int[] mergedArray = mergeSortedArrays(A, B);
+
+        // Print the merged array
+        System.out.println("Merged Array: " + Arrays.toString(mergedArray));
+    }
 }
