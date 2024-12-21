@@ -2,7 +2,7 @@ package interview.frequency;
 
 import java.util.Arrays;
 
-public class charOccurence {
+public class FreqOfCharWithoutHashMap {
     public static void main(String[] args) {
         String str = "hello world";
 

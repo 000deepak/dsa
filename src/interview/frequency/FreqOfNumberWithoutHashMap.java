@@ -1,6 +1,6 @@
 package interview.frequency;
 
-public class FrequencyOfElements {
+public class FreqOfNumberWithoutHashMap {
     public static void main(String[] args) {
         int[] a = new int[]{2, 3, 1, 2, 3, 2, 9, 3, 9, 1, 2, 9, 4};
         String[] filterd = new String[a.length];                        // by default null

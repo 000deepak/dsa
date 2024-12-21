@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* Prints the frequency for characters & Number */
-public class DuplicateFrequencyCharacterNumber {
+public class FreqOfCharNumberWithHashMap {
         public static void main(String[] args) {
 
             //character
