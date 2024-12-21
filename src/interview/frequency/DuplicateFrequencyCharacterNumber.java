@@ -3,13 +3,21 @@ package interview.frequency;
 import java.util.HashMap;
 import java.util.Map;
 
-/* Prints the frequency for characters in string/ s*/
+/* Prints the frequency for characters & Number */
 public class DuplicateFrequencyCharacterNumber {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        //character
-        String str = "hellojava";
+            //character
+            String str = "hellojava";
+            freqOfChar(str);
 
+
+            //number
+            int[] arr = {1, 2, 3, 4, 5, 2, 3, 4, 2, 1};
+            freqOfNumber(arr);
+        }
+
+    public static void freqOfChar(String str) {
         Map<Character, Integer> charFrequencyMap = new HashMap<>();
 
         for (char c : str.toCharArray()) {
@@ -18,13 +26,13 @@ public class DuplicateFrequencyCharacterNumber {
         }
 
         for (Map.Entry<Character, Integer> entry : charFrequencyMap.entrySet()) {
-            if (entry.getValue() > 1) {
+            if (entry.getValue() >= 1) {
                 System.out.println(entry.getKey() + " - " + entry.getValue() + " times");
             }
         }
+    }
 
-        //number
-        int[] arr = {1, 2, 3, 4, 5, 2, 3, 4, 2, 1};
+    public static void freqOfNumber(int[] arr) {
         Map<Integer, Integer> numberFrequencyMap = new HashMap<>();
 
         for (int i : arr) {
@@ -33,7 +41,7 @@ public class DuplicateFrequencyCharacterNumber {
         }
 
         for (Map.Entry<Integer, Integer> entry : numberFrequencyMap.entrySet()) {
-            if (entry.getValue() > 1) {
+            if (entry.getValue() >= 1) {
                 System.out.println(entry.getKey() + " - " + entry.getValue() + " times");
             }
         }
