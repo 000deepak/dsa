@@ -45,4 +45,24 @@ package smartInterviewsBasic107.array;
 //
 //Self Explanatory
 public class LogestContagios1s {
+      public static int findLongestOnes(int[] arr) {
+        int maxLength = 0; // To store the maximum length of contiguous 1's
+        int currentLength = 0; // To store the current length of contiguous 1's
+
+        for (int num : arr) {
+            if (num == 1) {
+                currentLength++; // Increment the current length for each 1
+                maxLength = Math.max(maxLength, currentLength); // Update the maximum length
+            } else {
+                currentLength = 0; // Reset current length if 0 is encountered
+            }
+        }
+
+        return maxLength;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 0, 1, 1, 1, 0, 1}; // Example input
+        System.out.println("The longest contiguous 1's are of length: " + findLongestOnes(arr));
+    }
 }
