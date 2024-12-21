@@ -1,6 +1,7 @@
     
 
-static void decimalToAnyBase(int decimalNum, int base) {
+
+static void decimalToBinaryOctal(int decimalNum, int base) {
         int resNum = 0;
         int power = 0;
 
@@ -30,6 +31,43 @@ static void decimalToAnyBase(int decimalNum, int base) {
         }
         System.out.println("Result is "+ resNum);
     }
+
+//decimal to hexdecimal
+static void decimalToHexadecimal(int decimalNum) {
+    char[] hexDigits = new char[32]; // To hold the hexadecimal digits (enough for 32-bit integers)
+    int index = 0; // Tracks the position for the next digit
+
+    while (decimalNum > 0) {
+        System.out.println("Current Decimal: " + decimalNum);
+
+        int rem = decimalNum % 16; // Remainder for base 16
+        System.out.println("Remainder: " + rem);
+
+        // Convert remainder to hexadecimal digit
+        if (rem < 10) {
+            hexDigits[index] = (char) ('0' + rem); // 0-9 digits
+        } else {
+            //'A' + 1 = 'B' (because ASCII value of 'A' is 65, and adding 1 gives 66, which corresponds to 'B')
+            //if rem = 15 then rem - 10 is 5 & 'A' + 5 = 'F'.
+            hexDigits[index] = (char) ('A' + rem - 10); // A-F letters
+        }
+        System.out.println("Hex Digit: " + hexDigits[index]);
+
+        // Move to the next position
+        index++;
+
+        // Update decimalNum to the quotient
+        decimalNum /= 16;
+    }
+
+    // Print the result in reverse order
+    System.out.print("Hexadecimal Result: ");
+    for (int i = index - 1; i >= 0; i--) {
+        System.out.print(hexDigits[i]);
+    }
+    System.out.println(); // Move to the next line
+}
+
 
 
     static void AnyBaseToDecimal(int binaryNum, int base) {
