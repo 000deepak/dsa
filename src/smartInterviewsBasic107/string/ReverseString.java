@@ -48,9 +48,13 @@ package smartInterviewsBasic107.string;
 //
 //Self Explanatory
 public class ReverseString {
-    String rev = "";
+    public static void main(String[] args) {
+        String rev = "";
+        String s = "ewwet";
         for(int i = s.length() -1; i>= 0; i--){
-        rev += s.charAt(i);
+            rev += s.charAt(i);
+        }
     }
+
 
 }

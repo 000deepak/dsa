@@ -1,5 +1,7 @@
 package smartInterviewsBasic107.array;
 
+import java.util.Arrays;
+
 ///Find Duplicate Number in Array
 //Find a duplicate element in the given array of integers. There will be only a single duplicate element in the array.
 //
@@ -53,6 +55,8 @@ package smartInterviewsBasic107.array;
 //Self Explanatory
 public class DuplicateNumberInArray {
     public static void main(String[] args) {
+        int[] arr = {1,2,4,5,7,8};
+        int n = arr.length;
         Arrays.sort(arr);
         for(int i = 1;i< n ;i++){
             if(arr[i]==arr[i-1]){

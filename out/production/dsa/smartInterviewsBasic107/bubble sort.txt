@@ -1,0 +1,20 @@
+bubble sort
+selection sort
+insertion sort
+shell sort
+merge sort
+liner search
+binary search
+
+factorial
+Armstrong
+naturalNumSum
+harshad number
+IsPrime
+table of number
+
+compoundInterest
+Compound Interest = P(1 + R/N)NT - P
+Print the Compound Interest for the given values of P, R, N, T.
+
+Anagram

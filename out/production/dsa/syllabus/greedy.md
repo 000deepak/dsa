@@ -1,0 +1,12 @@
+## Greedy Algorithms
+- **Greedy Algorithm Introduction**: TBD
+- **Activity Selection Problem**: TBD
+- **Egyptian Fraction**: TBD
+- **Job Sequencing Problem**: TBD
+- **Policemen Catches Thieves**: TBD
+- **Assign mice to Holes**: TBD
+- **Minimum swaps for bracket balancing**: TBD
+- **Minimum number of Platforms for Railway station**: TBD
+- **Minimum number of Coins - greedy**: TBD
+- **Fractional Knapsack - greedy**: TBD
+- **Text Justification**: TBD

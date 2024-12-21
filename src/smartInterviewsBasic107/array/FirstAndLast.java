@@ -50,20 +50,25 @@ package smartInterviewsBasic107.array;
 //
 //Self Explanatory
 public class FirstAndLast {
-    int firstIndex = -1;
-    int lastIndex = -1;
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5,6};
+        int x =2;
+        int firstIndex = -1;
+        int lastIndex = -1;
 
         for(int i = 0; i< arr.length; i++){
-        if(arr[i] == x) {
-            if(firstIndex == -1){
-                firstIndex = i;
+            if(arr[i] == x) {
+                if(firstIndex == -1){
+                    firstIndex = i;
+                }
+
+                lastIndex = i;
             }
 
-            lastIndex = i;
         }
-
-    }
 
 
         System.out.println(firstIndex + " " + lastIndex);
+    }
+
 }

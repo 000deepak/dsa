@@ -26,7 +26,8 @@ package smartInterviewsBasic107.array;
 //Self Explanatory
 public class OddEvenSum {
     public static void main(String[] args) {
-        int arr[];
+        int[] arr = {1,2,4,5,7,8};
+        int n = arr.length;
         int oddSum = 0;
         int evenSum = 0;
         for(int i = 0; i< n; i++){

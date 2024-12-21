@@ -1,5 +1,8 @@
 package smartInterviewsBasic107.array;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 //Unique Elements
 //Print unique elements of the array in the same order as they appear in the input.
 //
@@ -52,15 +55,20 @@ package smartInterviewsBasic107.array;
 //
 //Self Explanatory
 public class UniqueElemetns {
-    Set<Integer> lhs = new LinkedHashSet<>();
+    public static void main(String[] args) {
+        int[] arr = {2,4,6,8};
+        int n = 2;
+        Set<Integer> lhs = new LinkedHashSet<>();
         for(int i = 0; i< n; i++){
-        if(lhs.contains(arr[i])){
-            lhs.remove(arr[i]);
-        } else{
-            lhs.add(arr[i]);
+            if(lhs.contains(arr[i])){
+                lhs.remove(arr[i]);
+            } else{
+                lhs.add(arr[i]);
+            }
+        }
+        for(Integer num : lhs){
+            System.out.print(num + " ");
         }
     }
-        for(Integer num : lhs){
-        System.out.print(num + " ");
-    }
+
 }
