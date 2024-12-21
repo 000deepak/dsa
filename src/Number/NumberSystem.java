@@ -69,7 +69,7 @@ static void decimalToHexadecimal(int decimalNum) {
 }
 
 
-
+//binary octal to decimal
     static void AnyBaseToDecimal(int binaryNum, int base) {
         int resNum = 0;
         int power = 0;
@@ -81,3 +81,33 @@ static void decimalToHexadecimal(int decimalNum) {
         }
         System.out.println("Result is "+ resNum);
     }
+
+//hexadecimal to decimal
+static void HexadecimalToDecimal(String hexNum) {
+    int resNum = 0; // Resulting decimal number
+    int power = 0;  // Tracks the position (rightmost digit has power 0)
+
+    // Process the hexadecimal string from right to left
+    for (int i = hexNum.length() - 1; i >= 0; i--) {
+        char hexDigit = hexNum.charAt(i); // Current hex character
+
+        // Convert hex character to its integer value
+        int value;
+        if (hexDigit >= '0' && hexDigit <= '9') {
+            value = hexDigit - '0'; // Characters '0' to '9'
+        } else if (hexDigit >= 'A' && hexDigit <= 'F') {
+            value = hexDigit - 'A' + 10; // Characters 'A' to 'F'
+        } else if (hexDigit >= 'a' && hexDigit <= 'f') {
+            value = hexDigit - 'a' + 10; // Handle lowercase hex (optional)
+        } else {
+            throw new IllegalArgumentException("Invalid hexadecimal digit: " + hexDigit);
+        }
+
+        // Update the result
+        resNum += value * Math.pow(16, power);
+        power++; // Move to the next position (higher power of 16)
+    }
+
+    System.out.println("Result is " + resNum);
+}
+
