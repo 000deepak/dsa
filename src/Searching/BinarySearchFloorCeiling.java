@@ -1,3 +1,18 @@
+
+/*
+Sorting Required: The array must typically be sorted for efficient floor and ceil calculations
+
+1. Floor - is the largest number in the array that is less than or equal to 
+Array: [1, 3, 5, 7, 9]
+x =  6
+Floor: 5 (largest number ≤ 6)
+
+2. Ceil - is the smallest number in the array that is greater than or equal to 
+Array: [1, 3, 5, 7, 9]
+x = 6
+Ceil: 7 (smallest number ≥ 6)
+*/
+
 //public class BinarySearch {
 //
 //    // Method to find the floor of a number
